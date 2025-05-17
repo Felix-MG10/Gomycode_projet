@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 20px 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .btn {
+    background: #000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    background: #333;
+  }
+  
+  /* Hero Section */
+.hero {
+  background: url('/images/hero.png') center/cover no-repeat;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  padding: 60px 20px;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.3);
+}
+  
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-btn {
+    background: #00c853;
+  }
+  
+  /* Sections */
+  section {
+    padding: 60px 40px;
+    background: #fff;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .features ul, .usage ul {
+    list-style: none;
+    margin-top: 15px;
+  }
+  
+  .features li, .usage li {
+    margin: 8px 0;
+    font-size: 1.1rem;
+  }
+  
+  /* Pourquoi nous */
+  .reasons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .reason {
+    background: #e3f2fd;
+    padding: 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 30px;
+    background: #000;
+    color: white;
+  }
+  
