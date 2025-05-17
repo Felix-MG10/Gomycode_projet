@@ -9,7 +9,7 @@
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#">K9 Lavalier</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -136,11 +136,24 @@
       <p class="lead text-center">Chez K9 Lavalier, notre mission est de rendre la captation audio professionnelle accessible à tous. Que vous soyez créateur de contenu, enseignant ou journaliste, notre micro est votre allié de confiance.</p>
     </div>
   </section>
+<!-- Contact Section -->
+<section class="contact-section py-5" id="contact">
+  <div class="container">
+    <div id="contact-container"></div>
+  </div>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Micro K9 – Tous droits réservés. Contact : +221 78 795 44 73</p>
-  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    fetch('contact.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('contact-container').innerHTML = data;
+      })
+      .catch(error => {
+        console.error('Error loading contact.html:', error);
+      });
+  </script>
 </body>
 </html>
